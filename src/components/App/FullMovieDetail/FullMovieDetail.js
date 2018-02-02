@@ -19,7 +19,6 @@ const FullMovieDetail = (props) => {
         props.changeRoute(`/`);
       }}>
       <h2>{selectedMovie.title}</h2>
-      <img className='movie-poster-detail' src={`https://image.tmdb.org/t/p/w500${selectedMovie.posterImg}`} />
       <p>Released: {selectedMovie.releaseDate}</p>
       <p>Rating: {selectedMovie.voteAverage}</p>
       <p>Summary: {selectedMovie.description}</p>

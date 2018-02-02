@@ -8,6 +8,10 @@ html {
   background-color: black;
 }
 
+p {
+  margin: 10px
+}
+
 .app {
   display: grid;
   grid-template-columns: 100%;
@@ -18,7 +22,7 @@ html {
   height: 150px;
   width: 100%;
   display: grid;
-  grid-template-columns: 60% 20% 25%;
+  grid-template-columns: 10fr 3fr 1fr;
   position: fixed;
   z-index: 100;
   background-color: #000;
@@ -31,7 +35,7 @@ html {
   height: 150px;
   margin-left: 220px;
   color: red;
-  font-size: 50px;
+  font-size: 35px;
   font-weight: bold;
   line-height: 150px;
   text-decoration: none;
@@ -43,27 +47,23 @@ html {
   right: 100px;
   margin: 20px 0;
   color: #fff;
-  font-size: 20px;
-}
-
-.btn-container {
-  height: 150px;
+  font-size: 16px;
 }
 
 .favorites-nav-button,
 .sign-in,
 .sign-out {
-  padding: 20px;
+  padding: 16px;
   background-color: red;
   border: none;
   border-radius: 50px;
   color: #000;
   cursor: pointer;
   font-family: inherit;
-  font-size: 25px;
+  font-size: 16px;
   font-weight: bold;
   text-decoration: none;
-  line-height: 75px;
+  line-height: 85px;
 }
 
 .favorites-nav-button {
@@ -88,11 +88,11 @@ html {
 }
 
 .modal {
-  height: 400px;
+  height: 410px;
   width: 300px;
   margin: 0 auto;
   position: fixed;
-  top: 225px;
+  top: 180px;
   right: 0;
   left: 0;
   z-index: 100;
@@ -117,7 +117,7 @@ html {
     top: -1000px;
   }
   100% {
-    top: 225px;
+    top: 180px;
   }
 }
 
@@ -248,7 +248,6 @@ html {
   background-color: transparent;
   background-size: contain;
   cursor: pointer;
-  float: right;
   outline: none;
 }
 
@@ -260,16 +259,12 @@ html {
 
 .fullmovie-modal {
   width: 50%;
-  height: 70%;
   padding: 20px;
   color: white;
   line-height: 1.5em;
   text-align: center;
+  height: auto;
 }
-
-/* .movie-detail {
-  width: 500px;
-} */
 
 .movie-poster-detail {
   width: 200px;
@@ -308,6 +303,11 @@ html {
   border: 2px solid red;
 }
 
+ .signIn-signOut-container {
+   width: 150px;
+ }
+
+
 @media screen and (max-width: 1000px) {
   .header {
     grid-template-columns: 10fr 3fr 1fr;
@@ -324,9 +324,6 @@ html {
   .sign-in,
   .sign-out {
     line-height: 85px;
-  }
-  .signIn-signOut-container {
-    width: 150px;
   }
   .fullmovie-modal {
     width: 85%;
